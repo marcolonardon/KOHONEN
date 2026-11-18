@@ -1,0 +1,30 @@
+====================================================================
+SOM de Kohonen - sequências de DNA (Splice-junction, UCI)
+====================================================================
+Amostras: 3190  |  atributos: 240 (60 nucleotídeos x 4)
+Classes: EI = 767, IE = 768, N = 1655
+Treino: 2234  |  teste: 956  (divisão estratificada, semente 42)
+
+Mapa: 15x15 hexagonal, vizinhança gaussiana
+Passos: 1000 de ordenação + 112500 de ajuste fino (12.9 s)
+Erro de quantização (treino): 7.1891 inicial, 6.0915 final
+Erro de quantização (teste):  6.3299
+Erro topográfico (treino):    0.0546
+Neurônios rotulados: 225 de 225  (confiabilidade média dos rótulos: 0.867)
+  por classe: EI = 70, IE = 53, N = 102
+
+CLASSIFICAÇÃO - TREINO
+  Acurácia geral: 87.74%  (1960 de 2234)
+  Matriz de confusão (linha = classe real, coluna = classe prevista):
+                 EI     IE      N   precisão  revocação
+    EI          472     20     45      0.805      0.879
+    IE           27    480     31      0.851      0.892
+    N            87     64   1008      0.930      0.870
+
+CLASSIFICAÇÃO - TESTE
+  Acurácia geral: 84.52%  (808 de 956)
+  Matriz de confusão (linha = classe real, coluna = classe prevista):
+                 EI     IE      N   precisão  revocação
+    EI          201      5     24      0.750      0.874
+    IE           15    198     17      0.832      0.861
+    N            52     35    409      0.909      0.825
